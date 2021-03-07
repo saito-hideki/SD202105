@@ -6,6 +6,7 @@
 
 | Key | Value |
 | --- | ----- |
+| ホスト名 | galaxyng |
 | OS | CentOS Linux release 8.3.2011 |
 | vCPU数 | 1 |
 | Memoryサイズ | 4GB |
@@ -14,6 +15,3 @@
 | pulp-ansibleバージョン | 0.5.6 |
 | pulp-containerバージョン | 2.1.0 |
 | galaxy-ngバージョン | 4.2.2 |
-
-
-
