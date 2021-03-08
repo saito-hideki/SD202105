@@ -5,4 +5,4 @@
   roles:
     - role: sd202105.demo.hello 
       vars:
-        msg: "Hello, HOGEHOGE"
+        msg: "Hello, DemoSite!"
