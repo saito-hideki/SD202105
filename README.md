@@ -31,7 +31,7 @@ $ ansible-galaxy collection build .
 Private Galaxyに`admin`ユーザとしてログインする
 
 ```
-TBD
+![LOGIN](./images/galaxyng_login.png)
 ```
 
 My Namespacesから、デモ用のネームスペース(`sd202105`)を作成する
