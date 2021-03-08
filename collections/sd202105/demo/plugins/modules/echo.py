@@ -18,7 +18,7 @@ version_added: "0.0.1"
 description: hello module is for testing to build and use private collection
 
 options:
-    message:
+    msg:
         description: This is a greeting message
         required: false
         type: str
@@ -32,7 +32,7 @@ EXAMPLES = r'''
 # Pass in a message
 - name: Test with a message
   sd202105.demo.echo:
-    message: "Hello, World!"
+    msg: "Hello, World!"
 '''
 
 RETURN = r'''
@@ -41,7 +41,7 @@ message:
     type: str
     returned: always
     sample: {
-        'message': 'Hello, Ansible!',
+        'msg': 'Hello, Ansible!',
         'time': 1615164954.1205683,
     }
 '''
@@ -52,12 +52,12 @@ from ansible.module_utils.basic import AnsibleModule
 
 def run_module():
     module_args = dict(
-        message=dict(type='str', required=False, default='Hello, Ansible!'),
+        msg=dict(type='str', required=False, default='Hello, Ansible!'),
     )
 
     result = dict(
         changed=False,
-        message='',
+        msg='',
         time=None,
     )
 
@@ -69,7 +69,7 @@ def run_module():
     if module.check_mode:
         module.exit_json(**result)
 
-    result['message'] = module.params['message']
+    result['msg'] = module.params['msg']
     result['time'] = time.time()
     module.exit_json(**result)
 

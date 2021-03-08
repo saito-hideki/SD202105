@@ -1,9 +1,0 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - sd202105.demo.hello
-
-#
-# [EOF]
-#
