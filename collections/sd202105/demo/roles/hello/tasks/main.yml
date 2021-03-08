@@ -1,0 +1,8 @@
+---
+- name: echo and reply for testing
+  sd202105.demo.echo:
+    message: "Hello, Software Design!"
+
+#
+# [EOF]
+#

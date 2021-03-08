@@ -1,0 +1,10 @@
+galaxy_info:
+  author: Hideki Saito <saito@fgrep.org>
+  description: This is a demo role for the article in software design 2021.05
+  license: license (GPL-2.0-or-later, MIT, etc)
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - demo
+    - software_design
+dependencies: []
+  
