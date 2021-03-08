@@ -30,21 +30,15 @@ $ ansible-galaxy collection build .
 
 Private Galaxyに`admin`ユーザとしてログインする
 
-```
-TBD
-```
+![LOGIN](./images/galaxyng_login.png)
 
-My Namespacesから、デモ用のネームスペース(`sd202105`)を作成する
+My Namespacesから、デモ用のネームスペース(`sd202105`)を作成する。Namespace ownersは`admins`とする。
 
-```
-TBD
-```
+![CREATE_NAMESPACE](./images/galaxyng_create_ns.png)
 
 demo collectionのアーカイブ((`sd202105-demo-VERSION.tar.gz`)をアップロードする
 
-```
-TBD
-```
+![UPLOAD_COLLECTION](./images/galaxyng_upload_collection.png)
 
 `ansible-galaxy`コマンドでダウンロードして利用する
 
