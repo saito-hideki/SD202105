@@ -1,6 +1,7 @@
 ---
 - name: echo and reply for testing
   sd202105.demo.echo:
+    msg: "{{ msg }}"
 
 #
 # [EOF]
