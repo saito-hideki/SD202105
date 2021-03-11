@@ -42,6 +42,20 @@ demo collectionのアーカイブ((`sd202105-demo-VERSION.tar.gz`)をアップ�
 
 `ansible-galaxy`コマンドでダウンロードして利用する
 
+ansible.cfgを作成する
 ```
-TBD
+[galaxy]
+server_list = published_repo,community_repo
+[galaxy_server.published_repo]
+url=https://galaxyng.example.com/api/galaxy/content/published/
+token=取得したトークン
+[galaxy_server.community_repo]
+url=https://galaxyng.example.com/api/galaxy/content/community/
+token=取得したトークン
+```
+ansible-galaxyコマンド
+```
+$ ansible-galaxy collection install -c -v sd202105.demo
+$ ansible-galaxy collection install -c -v community.general
+```
 ```
